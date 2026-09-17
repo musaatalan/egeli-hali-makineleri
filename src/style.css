@@ -407,10 +407,6 @@ html[dir="rtl"] .nav {
     linear-gradient(180deg, rgba(10, 12, 16, 0.28) 0%, rgba(10, 12, 16, 0.08) 40%, rgba(10, 12, 16, 0.72) 100%);
 }
 
-.about-aside img {
-  filter: brightness(1.12) saturate(1.08);
-}
-
 .hero-content {
   position: relative;
   z-index: 1;
@@ -509,6 +505,7 @@ html[dir="rtl"] .nav {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  filter: brightness(1.12) saturate(1.08);
   transition: transform 0.8s var(--ease);
 }
 
