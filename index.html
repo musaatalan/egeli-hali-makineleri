@@ -6,7 +6,7 @@
     <title>Egeli Halı Makineleri | Endüstriyel Halı Overlok & Dikim</title>
     <meta
       name="description"
-      content="Egeli Halı Makineleri — halı overlok, taşınabilir dikim ve kesim makineleri. İbrahim Yayılgan & Sacit Yayılgan. Tel: 0539 652 53 26"
+      content="Egeli Halı Makineleri — halı overlok, saçak, oyma ve yedek parça. İbrahim Yayılgan & Sacit Yayılgan. Tel: 0539 652 53 26"
     />
     <meta name="theme-color" content="#12151a" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,22 +26,46 @@
         <span class="logo-text">Egeli Halı Makineleri</span>
       </a>
       <nav class="nav" aria-label="Ana menü">
-        <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#urunler">Ürünler</a>
-        <a href="#iletisim">İletişim</a>
+        <a href="#hakkimizda" data-i18n="nav.about">Hakkımızda</a>
+        <a href="#urunler" data-i18n="nav.products">Ürünler</a>
+        <a href="#iletisim" data-i18n="nav.contact">İletişim</a>
       </nav>
-      <a class="header-cta" href="https://wa.me/905396525326" target="_blank" rel="noopener">
-        WhatsApp
-      </a>
-      <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+
+      <div class="header-actions">
+        <div class="lang-switch" data-lang-switch>
+          <button
+            class="lang-btn"
+            type="button"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-label="Dil seç"
+            data-lang-toggle
+          >
+            <span data-lang-current>TR</span>
+            <svg viewBox="0 0 12 8" aria-hidden="true">
+              <path d="M1 1.5 L6 6.5 L11 1.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+          </button>
+          <ul class="lang-menu" role="listbox" hidden data-lang-menu>
+            <li><button type="button" role="option" data-lang="tr">Türkçe</button></li>
+            <li><button type="button" role="option" data-lang="en">English</button></li>
+            <li><button type="button" role="option" data-lang="de">Deutsch</button></li>
+            <li><button type="button" role="option" data-lang="ar">العربية</button></li>
+          </ul>
+        </div>
+        <a class="header-cta" href="https://wa.me/905396525326" target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+        <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false" data-i18n-aria="nav.menu">
+          <span></span><span></span>
+        </button>
+      </div>
     </header>
 
     <div class="mobile-nav" hidden>
-      <a href="#hakkimizda">Hakkımızda</a>
-      <a href="#urunler">Ürünler</a>
-      <a href="#iletisim">İletişim</a>
+      <a href="#hakkimizda" data-i18n="nav.about">Hakkımızda</a>
+      <a href="#urunler" data-i18n="nav.products">Ürünler</a>
+      <a href="#iletisim" data-i18n="nav.contact">İletişim</a>
       <a class="btn btn-solid" href="tel:+905396525326">0539 652 53 26</a>
     </div>
 
@@ -49,24 +73,31 @@
       <section class="hero">
         <div class="hero-media">
           <img
-            src="/images/urun-16.jpg"
-            alt="Donwei endüstriyel halı overlok makinesi"
+            src="/images/sacak-makinesi.jpg"
+            alt="Kansai Special saçak makinesi"
+            data-i18n-alt="hero.imgAlt"
             fetchpriority="high"
           />
           <div class="hero-shade"></div>
         </div>
         <div class="hero-content">
           <p class="brand-lockup">Egeli Halı Makineleri</p>
-          <h1>Halı overlok ve endüstriyel dikim makineleri</h1>
-          <p class="hero-lead">
+          <h1 data-i18n="hero.title">Halı overlok ve endüstriyel dikim makineleri</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
             Atölyeniz için dayanıklı makineler, yedek parça ve uzman destek —
             İbrahim Yayılgan &amp; Sacit Yayılgan.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-solid" href="https://wa.me/905396525326" target="_blank" rel="noopener">
+            <a
+              class="btn btn-solid"
+              href="https://wa.me/905396525326"
+              target="_blank"
+              rel="noopener"
+              data-i18n="hero.ctaPrimary"
+            >
               Hemen yazın
             </a>
-            <a class="btn btn-ghost" href="#urunler">Ürünlere bak</a>
+            <a class="btn btn-ghost" href="#urunler" data-i18n="hero.ctaSecondary">Ürünlere bak</a>
           </div>
         </div>
       </section>
@@ -74,35 +105,38 @@
       <section class="about" id="hakkimizda">
         <div class="section-inner about-grid">
           <div class="about-copy">
-            <p class="eyebrow">Hakkımızda</p>
-            <h2>Ege’den gelen makine tecrübesi</h2>
-            <p>
-              Egeli Halı Makineleri olarak halı overlok, taşınabilir dikim,
-              kesim ve endüstriyel bıçak çözümleri sunuyoruz. Donwei, Newport ve
-              Lutz Germany gibi güvenilir markalarla atölyenizin temposuna ayak
-              uyduran ekipman sağlıyoruz.
+            <p class="eyebrow" data-i18n="about.eyebrow">Hakkımızda</p>
+            <h2 data-i18n="about.title">Ege’den gelen makine tecrübesi</h2>
+            <p data-i18n="about.p1">
+              Egeli Halı Makineleri olarak halı overlok, saçak, oyma, birleştirme
+              ve yedek parça çözümleri sunuyoruz. Atölyenizin temposuna ayak
+              uyduran ekipman ve sarf malzemeleri sağlıyoruz.
             </p>
-            <p>
+            <p data-i18n="about.p2">
               İhtiyacınıza göre makine seçimi, kurulum ve satış sonrası destek
               için yanınızdayız.
             </p>
           </div>
           <aside class="about-aside">
             <figure>
-              <img src="/images/urun-14.jpg" alt="Halı overlok makinesi çalışma tezgahında" />
+              <img
+                src="/images/sacak-makinesi.jpg"
+                alt="Saçak makinesi"
+                data-i18n-alt="about.imgAlt"
+              />
             </figure>
             <ul class="stat-list">
               <li>
-                <strong>Halı overlok</strong>
-                <span>Donwei AK serisi ve masaüstleri</span>
+                <strong data-i18n="about.s1t">Halı overlok</strong>
+                <span data-i18n="about.s1d">Makineler, iğne, iplik ve biye</span>
               </li>
               <li>
-                <strong>Taşınabilir dikim</strong>
-                <span>Newport çuval ve kenar dikiş</span>
+                <strong data-i18n="about.s2t">Saçak &amp; oyma</strong>
+                <span data-i18n="about.s2d">Saçak makinesi ve havalı oyma</span>
               </li>
               <li>
-                <strong>Kesim &amp; bıçak</strong>
-                <span>Elektrikli kesiciler, Lutz kancalı bıçaklar</span>
+                <strong data-i18n="about.s3t">Yedek &amp; sarf</strong>
+                <span data-i18n="about.s3d">Servo motor, ütü, yedek parça</span>
               </li>
             </ul>
           </aside>
@@ -112,9 +146,9 @@
       <section class="products" id="urunler">
         <div class="section-inner">
           <header class="section-head">
-            <p class="eyebrow">Ürünler</p>
-            <h2>Atölyede çalışan makineler</h2>
-            <p class="section-lead">
+            <p class="eyebrow" data-i18n="products.eyebrow">Ürünler</p>
+            <h2 data-i18n="products.title">Atölyede çalışan makineler</h2>
+            <p class="section-lead" data-i18n="products.lead">
               Stoktaki ve sipariş üzerine temin ettiğimiz seçili modeller.
               Detay ve fiyat için bizi arayın.
             </p>
@@ -122,87 +156,87 @@
 
           <div class="product-grid">
             <article class="product">
-              <img src="/images/urun-16.jpg" alt="Donwei AK-2500 serisi" loading="lazy" />
+              <img src="/images/sacak-makinesi.jpg" alt="" data-i18n-alt="p1.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Donwei AK-2500</h3>
-                <p>Endüstriyel halı overlok</p>
+                <h3 data-i18n="p1.title">Saçak Makinesi</h3>
+                <p data-i18n="p1.desc">Kansai Special endüstriyel saçak</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-08.jpg" alt="Donwei AK-2502 serisi" loading="lazy" />
+              <img src="/images/pnomatik-oyma.jpg" alt="" data-i18n-alt="p2.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Donwei AK-2502</h3>
-                <p>Halı kenar overlok</p>
+                <h3 data-i18n="p2.title">Havalı Pnömatik Oyma</h3>
+                <p data-i18n="p2.desc">Daimoku halı oyma makinesi</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-14.jpg" alt="Donwei overlok masaüstü" loading="lazy" />
+              <img src="/images/overlok-igne.jpg" alt="" data-i18n-alt="p3.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Overlok masaüstü</h3>
-                <p>Pedallı tam set kurulum</p>
+                <h3 data-i18n="p3.title">Halı Overlok İğnesi</h3>
+                <p data-i18n="p3.desc">Dotec endüstriyel iğne paketleri</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-02.jpg" alt="Newport GK9-390D" loading="lazy" />
+              <img src="/images/servo-motor.jpg" alt="" data-i18n-alt="p4.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Newport GK9-390D</h3>
-                <p>36V taşınabilir dikim</p>
+                <h3 data-i18n="p4.title">Sessiz Servo Motor</h3>
+                <p data-i18n="p4.desc">Hız ayarlanabilir enerji tasarruflu</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-01.jpg" alt="Newport GK26-1A" loading="lazy" />
+              <img src="/images/serit-biye.jpg" alt="" data-i18n-alt="p5.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Newport GK26-1A</h3>
-                <p>Portable bag closer</p>
+                <h3 data-i18n="p5.title">Halı Overlok Şerit Biye</h3>
+                <p data-i18n="p5.desc">Siyah, beyaz ve gri biye ruloları</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-13.jpg" alt="Elektrikli döner kesici" loading="lazy" />
+              <img src="/images/igne-ipi-misina.jpg" alt="" data-i18n-alt="p6.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Elektrikli kesici</h3>
-                <p>Halı ve tekstil kesim</p>
+                <h3 data-i18n="p6.title">İğne İpi / Misina</h3>
+                <p data-i18n="p6.desc">Halı overlok iğne ipi misina</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-05.jpg" alt="Lutz Germany kancalı bıçaklar" loading="lazy" />
+              <img src="/images/polik-iplik-1800.jpg" alt="" data-i18n-alt="p7.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Lutz Germany</h3>
-                <p>Alman kancalı maket bıçakları</p>
+                <h3 data-i18n="p7.title">1800 Dtex Polik İplik</h3>
+                <p data-i18n="p7.desc">Halı overlok polik iplik bobinleri</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-06.jpg" alt="Endüstriyel kesim bıçakları" loading="lazy" />
+              <img src="/images/renkli-polik-iplik.jpg" alt="" data-i18n-alt="p8.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Yedek bıçaklar</h3>
-                <p>Overlok uyumlu kesici uçlar</p>
+                <h3 data-i18n="p8.title">Renkli Polik İplik</h3>
+                <p data-i18n="p8.desc">Çok renkli overlok iplik stoku</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-07.jpg" alt="Makine aksesuarları" loading="lazy" />
+              <img src="/images/yedek-parca.jpg" alt="" data-i18n-alt="p9.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Aksesuarlar</h3>
-                <p>Bıçak, yağ ve yedek parça</p>
+                <h3 data-i18n="p9.title">Overlok Yedek Parça</h3>
+                <p data-i18n="p9.desc">Halı overlok makinesi yedek parçaları</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-09.jpg" alt="Halı makinesi detay" loading="lazy" />
+              <img src="/images/birlestirme-utu.jpg" alt="" data-i18n-alt="p10.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Makine detay</h3>
-                <p>Profesyonel atölye ekipmanı</p>
+                <h3 data-i18n="p10.title">Birleştirme Ütüsü &amp; Bandı</h3>
+                <p data-i18n="p10.desc">800W heat bond ütü ve bant</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-11.jpg" alt="Endüstriyel dikim makinesi" loading="lazy" />
+              <img src="/images/urun-16.jpg" alt="" data-i18n-alt="p11.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Dikim çözümleri</h3>
-                <p>Ağır iş dikim makineleri</p>
+                <h3 data-i18n="p11.title">Donwei AK-2500</h3>
+                <p data-i18n="p11.desc">Endüstriyel hali overlok</p>
               </div>
             </article>
             <article class="product">
-              <img src="/images/urun-15.jpg" alt="Showroom makine sergisi" loading="lazy" />
+              <img src="/images/urun-02.jpg" alt="" data-i18n-alt="p12.alt" loading="lazy" />
               <div class="product-meta">
-                <h3>Showroom</h3>
-                <p>Yerinde inceleme imkanı</p>
+                <h3 data-i18n="p12.title">Newport GK9-390D</h3>
+                <p data-i18n="p12.desc">36V taşınabilir dikim</p>
               </div>
             </article>
           </div>
@@ -212,9 +246,9 @@
       <section class="contact" id="iletisim">
         <div class="section-inner contact-grid">
           <div class="contact-copy">
-            <p class="eyebrow">İletişim</p>
-            <h2>Makine seçimi için arayın</h2>
-            <p>
+            <p class="eyebrow" data-i18n="contact.eyebrow">İletişim</p>
+            <h2 data-i18n="contact.title">Makine seçimi için arayın</h2>
+            <p data-i18n="contact.lead">
               Stok, fiyat ve teknik bilgi için WhatsApp veya telefonla
               ulaşabilirsiniz.
             </p>
@@ -222,7 +256,7 @@
 
           <div class="contact-cards">
             <a class="contact-line" href="tel:+905396525326">
-              <span class="contact-label">Telefon</span>
+              <span class="contact-label" data-i18n="contact.phone">Telefon</span>
               <span class="contact-value">0539 652 53 26</span>
             </a>
             <a
@@ -232,17 +266,17 @@
               rel="noopener"
             >
               <span class="contact-label">WhatsApp</span>
-              <span class="contact-value">Mesaj gönder</span>
+              <span class="contact-value" data-i18n="contact.wa">Mesaj gönder</span>
             </a>
             <div class="contact-line">
-              <span class="contact-label">Adres</span>
+              <span class="contact-label" data-i18n="contact.address">Adres</span>
               <span class="contact-value">
                 Cumhuriyet Mahallesi<br />
                 Okçular Sokak No: 27/A
               </span>
             </div>
             <div class="contact-line">
-              <span class="contact-label">Yetkililer</span>
+              <span class="contact-label" data-i18n="contact.people">Yetkililer</span>
               <span class="contact-value">
                 İbrahim Yayılgan<br />
                 Sacit Yayılgan
@@ -259,7 +293,9 @@
           <p class="footer-brand">Egeli Halı Makineleri</p>
           <p class="footer-note">egelihalimakineleri.com.tr</p>
         </div>
-        <p class="footer-copy">© <span id="year"></span> Tüm hakları saklıdır.</p>
+        <p class="footer-copy">
+          © <span id="year"></span> <span data-i18n="footer.rights">Tüm hakları saklıdır.</span>
+        </p>
       </div>
     </footer>
 
@@ -269,6 +305,7 @@
       target="_blank"
       rel="noopener"
       aria-label="WhatsApp ile yazın"
+      data-i18n-aria="fab.wa"
     >
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
